@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Dag_02
 {
@@ -9,43 +7,30 @@ namespace Dag_02
 		static void Main(string[] args)
 		{
 			var presentsDelivered = 0;
-			var lastPrime = 0;
 
 			for (int i = 0; i < 5433000; i++)
 			{
 				if (i.ToString().Contains("7"))
 				{
-					var prime = FindPrime(lastPrime, i);
+					var prime = FindPrime(i);
 					i += prime;
-					lastPrime = prime;
 					continue;
 				}
 
 				presentsDelivered++;
 			}
-
-			Console.WriteLine("Gave" + presentsDelivered);
+			
+			Console.WriteLine($"Nissen leverte {presentsDelivered} gaver");
 		}
 
-		private static int FindPrime(int min, int max)
+		private static int FindPrime(int presentNr)
 		{
-			var prime = 0;
-
-			for (var num = min; num <= max; num++)
+			for (int i = 2; i < presentNr / 2; i++)
 			{
-				var ctr = 0;
-
-				for (var i = 2; i <= num / 2; i++)
-				{
-					if (num % i != 0) continue;
-					ctr++;
-					break;
-				}
-
-				if (ctr == 0 && num != 1) prime = num;
+				if (presentNr % i == 0) return FindPrime(presentNr - 1);
 			}
 
-			return prime;
+			return presentNr;
 		}
 	}
 }
