@@ -27,7 +27,7 @@ namespace Dag_02
 		{
 			for (int i = 2; i < presentNr / 2; i++)
 			{
-				if (presentNr % i == 0) return FindPrime(presentNr - 1);
+				if (presentNr % i == 0) return FindPrime(presentNr % 2 == 0 ? presentNr - 1 : presentNr - 2);
 			}
 
 			return presentNr;
