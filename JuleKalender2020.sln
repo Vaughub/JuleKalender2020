@@ -15,9 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dag-10", "Dag-10\Dag-10.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dag-09", "Dag-09\Dag-09.csproj", "{7106F221-1E75-4643-80A9-CC5393B8761B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dag-06", "Dag-06\Dag-06.csproj", "{E633C249-B40E-47DB-9DAB-7BC3AC166BCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dag-06 (Invalid)", "Dag-06\Dag-06 (Invalid).csproj", "{E633C249-B40E-47DB-9DAB-7BC3AC166BCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dag-05", "Dag-05\Dag-05.csproj", "{CDB33603-3A80-48C4-8612-76E8933EB306}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dag-05 (Invalid)", "Dag-05\Dag-05 (Invalid).csproj", "{CDB33603-3A80-48C4-8612-76E8933EB306}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
