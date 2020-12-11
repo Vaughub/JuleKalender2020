@@ -13,7 +13,7 @@ namespace Dag_06
 
 			var sum = candyList.Sum() % (float)candyList.Length;
 
-			float i = (float)143 % 11;
+			//float i = (float)143 % 11;
 
 
 			var sum1 = (float)(sum) / 11;
